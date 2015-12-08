@@ -1,0 +1,53 @@
+# By danieleds0
+
+
+# Replacing method _Q0C for F3 key to work
+# by removing the code which prevents
+into Method label _Q0C replace_content begin 
+             If (ATKP)\n
+                {\n
+                   \_SB.ATKD.IANE (0xC5)\n
+                }
+end;
+
+# Replacing method _Q0D for F4 key to work
+# by removing the code which prevents
+into Method label _Q0D replace_content begin 
+             If (ATKP)\n
+                {\n
+                   \_SB.ATKD.IANE (0xC4)\n
+                }
+end;
+
+# Replacing method _Q10 for F7 key to work
+into Method label _Q10 replace_content begin 
+             If (ATKP)\n
+                {\n
+                   \_SB.ATKD.IANE (0x35)\n
+                }
+
+
+            If (LEqual (BLCT, Zero))\n
+            {\n
+                Store (One, Local0)\n
+                Store (RPIN (0x72), Local0)\n
+                XOr (Local0, One, Local0)\n
+                SPIN (0x72, Local0)\n
+                If (ATKP)\n
+                {\n
+                    Subtract (0x34, Local0, Local0)\n
+                    \_SB.ATKD.IANE (Local0)\n
+                }\n
+            }\n
+            Else\n
+            {\n
+                If (LEqual (BLCT, One))\n
+                {\n
+                    If (ATKP)\n
+                    {\n
+                        \_SB.ATKD.IANE (0x35)\n
+                    }\n
+                }\n
+            }
+
+end;
