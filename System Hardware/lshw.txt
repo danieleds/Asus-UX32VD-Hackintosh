@@ -1,0 +1,473 @@
+# lshw
+
+ubuntu-nb
+    description: Computer
+    width: 64 bits
+    capabilities: smbios-2.7 vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 5853MiB
+     *-cpu
+          product: Intel(R) Core(TM) i5-3317U CPU @ 1.70GHz
+          vendor: Intel Corp.
+          physical id: 1
+          bus info: cpu@0
+          size: 1675MHz
+          capacity: 2600MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt cpufreq
+     *-pci
+          description: Host bridge
+          product: 3rd Gen Core processor DRAM Controller
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 09
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=ivb_uncore
+          resources: irq:0
+        *-pci:0
+             description: PCI bridge
+             product: Xeon E3-1200 v2/3rd Gen Core processor PCI Express Root Port
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 09
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm msi pciexpress normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:26 ioport:e000(size=4096) memory:f6000000-f70fffff ioport:e0000000(size=301989888)
+           *-generic UNCLAIMED
+                description: Unassigned class
+                product: Illegal Vendor ID
+                vendor: Illegal Vendor ID
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: ff
+                width: 32 bits
+                clock: 66MHz
+                capabilities: bus_master vga_palette cap_list
+                configuration: latency=255 maxlatency=255 mingnt=255
+                resources: memory:f6000000-f6ffffff memory:e0000000-efffffff memory:f0000000-f1ffffff ioport:e000(size=128) memory:f7000000-f707ffff
+        *-display
+             description: VGA compatible controller
+             product: 3rd Gen Core processor Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm vga_controller bus_master cap_list rom
+             configuration: driver=i915 latency=0
+             resources: irq:29 memory:f7400000-f77fffff memory:d0000000-dfffffff ioport:f000(size=64)
+        *-generic:0 UNCLAIMED
+             description: Signal processing controller
+             product: 3rd Gen Core Processor Thermal Subsystem
+             vendor: Intel Corporation
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm bus_master cap_list
+             configuration: latency=0
+             resources: memory:cfe08000-cfe0ffff
+        *-usb:0
+             description: USB controller
+             product: 7 Series/C210 Series Chipset Family USB xHCI Host Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:27 memory:f7900000-f790ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 4.2.0-19-generic xhci-hcd
+                physical id: 0
+                bus info: usb@2
+                logical name: usb2
+                version: 4.02
+                capabilities: usb-3.00
+                configuration: driver=hub slots=4 speed=5000Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 4.2.0-19-generic xhci-hcd
+                physical id: 1
+                bus info: usb@1
+                logical name: usb1
+                version: 4.02
+                capabilities: usb-2.00
+                configuration: driver=hub slots=4 speed=480Mbit/s
+        *-communication
+             description: Communication controller
+             product: 7 Series/C210 Series Chipset Family MEI Controller #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: irq:30 memory:f7922000-f792200f
+        *-usb:1
+             description: USB controller
+             product: 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #2
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:16 memory:f7920000-f79203ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 4.2.0-19-generic ehci_hcd
+                physical id: 1
+                bus info: usb@3
+                logical name: usb3
+                version: 4.02
+                capabilities: usb-2.00
+                configuration: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   description: USB hub
+                   product: Integrated Rate Matching Hub
+                   vendor: Intel Corp.
+                   physical id: 1
+                   bus info: usb@3:1
+                   version: 0.00
+                   capabilities: usb-2.00
+                   configuration: driver=hub slots=6 speed=480Mbit/s
+                 *-usb
+                      description: Generic USB device
+                      product: USB2.0-CRW
+                      vendor: Generic
+                      physical id: 4
+                      bus info: usb@3:1.4
+                      version: 39.60
+                      serial: 20100201396000000
+                      capabilities: usb-2.00
+                      configuration: driver=rtsx_usb maxpower=500mA speed=480Mbit/s
+        *-multimedia
+             description: Audio device
+             product: 7 Series/C210 Series Chipset Family High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:31 memory:f7918000-f791bfff
+        *-pci:1
+             description: PCI bridge
+             product: 7 Series/C210 Series Chipset Family PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16
+        *-pci:2
+             description: PCI bridge
+             product: 7 Series/C210 Series Chipset Family PCI Express Root Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 memory:f7800000-f78fffff
+           *-network
+                description: Wireless interface
+                product: BCM4322 802.11a/b/g/n Wireless LAN Controller
+                vendor: Broadcom Corporation
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                logical name: wlan1
+                version: 01
+                serial: 00:26:5e:80:40:a7
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=wl0 driverversion=6.30.223.248 (r487574) ip=192.168.1.106 latency=0 multicast=yes wireless=IEEE 802.11abg
+                resources: irq:17 memory:f7800000-f7803fff
+        *-usb:2
+             description: USB controller
+             product: 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:23 memory:f791f000-f791f3ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 4.2.0-19-generic ehci_hcd
+                physical id: 1
+                bus info: usb@4
+                logical name: usb4
+                version: 4.02
+                capabilities: usb-2.00
+                configuration: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   description: USB hub
+                   product: Integrated Rate Matching Hub
+                   vendor: Intel Corp.
+                   physical id: 1
+                   bus info: usb@4:1
+                   version: 0.00
+                   capabilities: usb-2.00
+                   configuration: driver=hub slots=6 speed=480Mbit/s
+                 *-usb
+                      description: Video
+                      product: USB2.0 HD UVC WebCam
+                      vendor: Chicony Electronics Co.,Ltd.
+                      physical id: 5
+                      bus info: usb@4:1.5
+                      version: 29.26
+                      serial: 200901010001
+                      capabilities: usb-2.00
+                      configuration: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+        *-isa
+             description: ISA bridge
+             product: HM76 Express Chipset LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+        *-storage
+             description: SATA controller
+             product: 7 Series Chipset Family 6-port SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 04
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage msi pm ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:28 ioport:f0b0(size=8) ioport:f0a0(size=4) ioport:f090(size=8) ioport:f080(size=4) ioport:f060(size=32) memory:f791e000-f791e7ff
+        *-serial UNCLAIMED
+             description: SMBus
+             product: 7 Series/C210 Series Chipset Family SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:f791d000-f791d0ff ioport:f040(size=32)
+        *-generic:1 UNCLAIMED
+             description: Signal processing controller
+             product: 7 Series/C210 Series Chipset Family Thermal Management Controller
+             vendor: Intel Corporation
+             physical id: 1f.6
+             bus info: pci@0000:00:1f.6
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: latency=0
+             resources: memory:f791c000-f791cfff
+     *-scsi:0
+          physical id: 2
+          logical name: scsi0
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: Samsung SSD 850
+             physical id: 0.0.0
+             bus info: scsi@0:0.0.0
+             logical name: /dev/sda
+             version: 1B6Q
+             serial: S21JNSAG219412Z
+             size: 465GiB (500GB)
+             capabilities: gpt-1.00 partitioned partitioned:gpt
+             configuration: ansiversion=5 guid=500b5498-682b-4de6-a625-b4dada589f48 logicalsectorsize=512 sectorsize=512
+           *-volume:0
+                description: Windows NTFS volume
+                vendor: Windows
+                physical id: 1
+                bus info: scsi@0:0.0.0,1
+                logical name: /dev/sda1
+                version: 3.1
+                serial: d820-6312
+                size: 298MiB
+                capacity: 299MiB
+                capabilities: boot precious readonly hidden nomount ntfs initialized
+                configuration: clustersize=4096 created=2015-05-22 23:13:19 filesystem=ntfs label=Ripristino modified_by_chkdsk=true mounted_on_nt4=true name=Basic data partition resize_log_file=true state=dirty upgrade_on_mount=true
+           *-volume:1
+                description: Windows FAT volume
+                vendor: mkfs.fat
+                physical id: 2
+                bus info: scsi@0:0.0.0,2
+                logical name: /dev/sda2
+                logical name: /boot/efi
+                version: FAT32
+                serial: 6b1c-2662
+                size: 186MiB
+                capacity: 199MiB
+                capabilities: boot fat initialized
+                configuration: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro name=EFI system partition state=mounted
+           *-volume:2
+                description: reserved partition
+                vendor: Windows
+                physical id: 3
+                bus info: scsi@0:0.0.0,3
+                logical name: /dev/sda3
+                serial: 418479f2-0b68-419e-924b-6dc2789ae4aa
+                capacity: 127MiB
+                capabilities: nofs
+           *-volume:3
+                description: Windows NTFS volume
+                vendor: Windows
+                physical id: 4
+                bus info: scsi@0:0.0.0,4
+                logical name: /dev/sda4
+                logical name: /windows/c
+                version: 3.1
+                serial: 548cea8a-c21a-9d48-b56a-4fd6876abb94
+                size: 169GiB
+                capacity: 169GiB
+                capabilities: ntfs initialized
+                configuration: clustersize=4096 created=2015-05-22 23:14:08 filesystem=ntfs label=Windows 8.1 mount.fstype=fuseblk mount.options=rw,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096 name=Basic data partition state=mounted
+           *-volume:4
+                description: Windows NTFS volume
+                vendor: Windows
+                physical id: 5
+                bus info: scsi@0:0.0.0,5
+                logical name: /dev/sda5
+                version: 3.1
+                serial: 84cf-0aea
+                size: 774MiB
+                capacity: 795MiB
+                capabilities: boot precious readonly hidden nomount ntfs initialized
+                configuration: clustersize=4096 created=2015-11-28 11:52:00 filesystem=ntfs modified_by_chkdsk=true mounted_on_nt4=true resize_log_file=true state=dirty upgrade_on_mount=true
+           *-volume:5
+                description: EXT4 volume
+                vendor: Linux
+                physical id: 6
+                bus info: scsi@0:0.0.0,6
+                logical name: /dev/sda6
+                logical name: /home
+                version: 1.0
+                serial: 400c4273-13f9-41c1-aea8-bc60af597175
+                size: 110GiB
+                capabilities: journaled extended_attributes large_files huge_files dir_nlink recover extents ext4 ext2 initialized
+                configuration: created=2015-05-23 11:44:25 filesystem=ext4 lastmountpoint=/home modified=2015-12-09 11:01:50 mount.fstype=ext4 mount.options=rw,relatime,data=ordered mounted=2015-12-09 11:01:50 state=mounted
+           *-volume:6
+                description: Apple HFS+ partition
+                vendor: Mac OS X (journaled)
+                physical id: 7
+                bus info: scsi@0:0.0.0,7
+                logical name: /dev/sda7
+                version: 4
+                serial: fc1f4ad1-f5eb-d3ef-0000-0000001c9000
+                size: 57GiB
+                capabilities: journaled bootable osx hfsplus initialized
+                configuration: boot=osx checked=2015-10-04 23:21:33 created=2015-10-04 14:21:33 filesystem=hfsplus lastmountedby=HFSJ modified=2015-12-09 12:01:38 state=clean
+           *-volume:7
+                description: boot partition
+                vendor: Mac OS X (journaled)
+                physical id: 8
+                bus info: scsi@0:0.0.0,8
+                logical name: /dev/sda8
+                version: 4
+                serial: f4102c0c-35f0-430d-0000-000000005000
+                size: 619MiB
+                capabilities: boot precious readonly hidden nomount journaled bootable macos osx hfsplus initialized
+                configuration: boot=osx checked=2015-10-04 19:00:22 created=2015-10-04 10:00:22 filesystem=hfsplus lastmountedby=HFSJ modified=2015-10-04 23:22:22 name=Recovery HD state=clean
+           *-volume:8
+                description: EXT4 volume
+                vendor: Linux
+                physical id: 9
+                bus info: scsi@0:0.0.0,9
+                logical name: /dev/sda9
+                logical name: /
+                version: 1.0
+                serial: bb07365e-24c3-4151-9f2d-0e65aef98a36
+                size: 30GiB
+                capabilities: journaled extended_attributes large_files huge_files dir_nlink recover extents ext4 ext2 initialized
+                configuration: created=2015-05-23 11:44:26 filesystem=ext4 lastmountpoint=/ modified=2015-12-09 12:01:45 mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro,data=ordered mounted=2015-12-09 11:01:46 state=mounted
+           *-volume:9
+                description: Windows NTFS volume
+                vendor: Windows
+                physical id: a
+                bus info: scsi@0:0.0.0,10
+                logical name: /dev/sda10
+                logical name: /windows/d
+                version: 3.1
+                serial: 5e9148f6-d440-1f4e-89fe-06e4f1c9dcb6
+                size: 95GiB
+                capacity: 95GiB
+                capabilities: ntfs initialized
+                configuration: clustersize=4096 created=2015-05-23 11:19:33 filesystem=ntfs label=Dati mount.fstype=fuseblk mount.options=rw,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096 state=mounted
+     *-scsi:1
+          physical id: 3
+          logical name: scsi1
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: SanDisk SSD i100
+             physical id: 0.0.0
+             bus info: scsi@1:0.0.0
+             logical name: /dev/sdb
+             version: 6.02
+             serial: 130200101632
+             size: 22GiB (24GB)
+             capabilities: gpt-1.00 partitioned partitioned:gpt
+             configuration: ansiversion=5 guid=002824f6-a120-4636-9066-dbe8d0d4b6f0 logicalsectorsize=512 sectorsize=512
+           *-volume:0
+                description: Linux swap volume
+                vendor: Linux
+                physical id: 1
+                bus info: scsi@1:0.0.0,1
+                logical name: /dev/sdb1
+                version: 1
+                serial: b586ae37-5d3a-463e-965c-25894f1ed284
+                size: 10237MiB
+                capacity: 10239MiB
+                capabilities: nofs swap initialized
+                configuration: filesystem=swap pagesize=4095
+           *-volume:1
+                description: Windows NTFS volume
+                vendor: Windows
+                physical id: 2
+                bus info: scsi@1:0.0.0,2
+                logical name: /dev/sdb2
+                logical name: /media/daniele/Dati 2
+                version: 3.1
+                serial: 5092fd9c-afba-e047-b971-45eea216a451
+                size: 12GiB
+                capacity: 12GiB
+                capabilities: ntfs initialized
+                configuration: clustersize=4096 created=2015-05-23 11:34:10 filesystem=ntfs label=Dati 2 mount.fstype=fuseblk mount.options=rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096 state=mounted
