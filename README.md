@@ -14,9 +14,24 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
 
 ####Status:
  - Current OS X version: El Capitan 10.11.1
- - Working: <!--CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys etc...-->
- - Not working: Card reader
- - Not working (not tested properly): HDMI, iMessage, Handoff, Instant Hotspot, hibernation, Nvidia GeForce GT 620M
+ - Working:
+   - CPU steps
+   - Sleep
+   - Audio
+   - WiFi
+   - Multitouch
+   - FN keys
+   - A lot more...
+ - Not working: 
+   - Card reader
+   - Bluetooth (it works using an appropriate Wifi card like AzureWave AW-CE123H)
+ - Not working (not tested properly):
+   - HDMI
+   - iMessage
+   - Handoff
+   - Instant Hotspot
+   - Hibernation
+   - Nvidia GeForce GT 620M
 
 ####What is inside this repo:
  - A working DSDT: [DSDT-SSDT/](DSDT-SSDT/).
