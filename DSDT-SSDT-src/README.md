@@ -11,7 +11,8 @@ Apply the patches **in the following order**:
  - ./RehabMan/graphics_Rename-GFX0.txt
  - ./RehabMan/graphics_Rename-B0D3.txt
  - ./RehabMan/system_OSYS_win7.txt
- - ./RehabMan/graphics_HD4K_low.txt (note: set “AAPL,ig-platform-id”,Buffer (0x04) {0x09, 0x00, 0x66, 0x01}
+ - ./RehabMan/graphics_HD4K_low.txt (WARNING: set "AAPL,ig-platform-id",Buffer (0x04) {0x09, 0x00, 0x66, 0x01}
+ - ./RehabMan/audio_HDEF-layout3.txt
  - ./EMlyDinEsH/ALS Patch.txt
  - ./EMlyDinEsH/Fn Brightness Keys Patch.txt
  - ./EMlyDinEsH/FnKeys as Function Keys Patch.txt
