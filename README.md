@@ -36,6 +36,7 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
 ####What is inside this repo:
  - A working DSDT: [DSDT-SSDT/](DSDT-SSDT/).
  - Instructions on how the DSDT has been made, in case you want to patch your own: [DSDT-SSDT-src/](DSDT-SSDT-src/).
+ - The necessary kexts
 
 <!--
 - [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers
