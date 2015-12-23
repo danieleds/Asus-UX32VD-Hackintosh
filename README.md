@@ -21,12 +21,13 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - WiFi
    - Multitouch
    - FN keys
+   - HDMI video
    - A lot more...
  - Not working: 
    - Card reader
    - Bluetooth (it works using an appropriate Wifi card like AzureWave AW-CE123H)
- - Not working (not tested properly):
-   - HDMI
+ - Unknown (not tested properly):
+   - HDMI audio
    - iMessage
    - Handoff
    - Instant Hotspot
