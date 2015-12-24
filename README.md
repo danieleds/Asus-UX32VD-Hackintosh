@@ -35,12 +35,12 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - Nvidia GeForce GT 620M
 
 ####What is inside this repo:
- - A working DSDT: [DSDT-SSDT/](DSDT-SSDT/).
+ - A working DSDT: [EFI/CLOVER/ACPI/patched/](EFI/CLOVER/ACPI/patched/).
  - Instructions on how the DSDT has been made, in case you want to patch your own: [DSDT-SSDT-src/](DSDT-SSDT-src/).
- - The necessary kexts
+ - [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers: [EFI/CLOVER/](EFI/CLOVER).
+ - The necessary kexts: [Custom Kexts/](Custom Kexts/). When a config.plist of these kexts has been altered, you'll find a config.original.plist in the same directory in case you want to see the differences.
 
 <!--
-- [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers
 - DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v13.2: "$ ./ssdtPRgen.sh -x 1 -lfm 900")
 - Various kexts:
 	- [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver)
