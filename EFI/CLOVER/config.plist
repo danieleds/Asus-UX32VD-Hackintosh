@@ -172,7 +172,7 @@
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
 		<key>Theme</key>
-		<string>applestyle</string>
+		<string>embedded</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -235,44 +235,60 @@
 				</data>
 			</dict>
 			<dict>
-				<key>Name</key>
-				<string>AppleHDA</string>
 				<key>Comment</key>
 				<string>Expect 2 matches</string>
 				<key>Find</key>
-				<data>hQjsEA==</data>
-				<key>Replace</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
+				<data>
+				hQjsEA==
+				</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>Expect 2 matches</string>
 				<key>Find</key>
-				<data>gxnUEQ==</data>
-				<key>Replace</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
+				<data>
+				gxnUEQ==
+				</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>Expect 2 matches</string>
 				<key>Find</key>
-				<data>hBnUEQ==</data>
+				<data>
+				hBnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>aQLsEA==</data>
+				<data>
+				aQLsEA==
+				</data>
 			</dict>
 			<dict>
-                                <key>Name</key>
-                                <string>IOGraphicsFamily</string>
 				<key>Comment</key>
 				<string>Second Stage Boot</string>
 				<key>Find</key>
-				<data>AQAAdRc=</data>
+				<data>
+				AQAAdRc=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
-				<data>AQAA6xc=</data>
+				<data>
+				AQAA6xc=
+				</data>
 			</dict>
 		</array>
 	</dict>
