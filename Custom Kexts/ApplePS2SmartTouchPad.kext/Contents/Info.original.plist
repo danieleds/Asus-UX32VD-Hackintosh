@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.4.5</string>
+	<string>4.5</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4.4.5</string>
+	<string>4.5</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -902,6 +902,8 @@
 				</dict>
 				<key>FingersPress</key>
 				<dict>
+					<key>2FingersClickAction</key>
+					<integer>2</integer>
 					<key>2FingersPressAction</key>
 					<integer>18</integer>
 					<key>3FingersPressAction</key>
@@ -930,8 +932,19 @@
 					<key>TriggerAccInputForKeyPressCount</key>
 					<integer>2</integer>
 				</dict>
+				<key>Mouse</key>
+				<dict>
+					<key>Resolution</key>
+					<integer>3</integer>
+					<key>SampleRate</key>
+					<integer>80</integer>
+					<key>Scaling</key>
+					<integer>1</integer>
+				</dict>
 				<key>Others</key>
 				<dict>
+					<key>4FingersPinchAction</key>
+					<integer>4</integer>
 					<key>5FingersPinchAction</key>
 					<integer>3</integer>
 					<key>CircularRotate</key>
@@ -957,7 +970,7 @@
 					<key>RotationMaxCFDelta</key>
 					<integer>85</integer>
 				</dict>
-				<key>Pointer</key>
+				<key>Pointing</key>
 				<dict>
 					<key>AccelerationPrefValue</key>
 					<integer>0</integer>
@@ -965,6 +978,10 @@
 					<true/>
 					<key>DisableTrackPointButton</key>
 					<false/>
+					<key>EnhancedAcceleration</key>
+					<true/>
+					<key>EnhancedAccelerationLevel</key>
+					<integer>3</integer>
 					<key>PointerCustomAcceleration</key>
 					<integer>19</integer>
 					<key>PointerResolution</key>
@@ -984,39 +1001,62 @@
 					</dict>
 					<key>PointerSmoothSamples</key>
 					<integer>3</integer>
+					<key>Sensitivity</key>
+					<integer>0</integer>
+					<key>TouchpadEdges</key>
+					<dict>
+						<key>DisableBottomEdgeActiveArea</key>
+						<integer>0</integer>
+						<key>DisableLeftEdgeActiveArea</key>
+						<integer>0</integer>
+						<key>DisableRightEdgeActiveArea</key>
+						<integer>0</integer>
+						<key>DisableTopEdgeActiveArea</key>
+						<integer>0</integer>
+					</dict>
 				</dict>
 				<key>Scrolling</key>
 				<dict>
-					<key>2FScrollAccelMode</key>
-					<integer>0</integer>
-					<key>Auto2FingScroll</key>
-					<false/>
-					<key>AutoEdgeScroll</key>
-					<false/>
-					<key>Continuous2FingScroll</key>
-					<true/>
-					<key>ContinuousEdgeScroll</key>
-					<false/>
-					<key>EdgeCircularScroll</key>
-					<false/>
-					<key>EdgeCircularScrollDelta</key>
-					<integer>10</integer>
-					<key>EdgeHScrollAdaptArea</key>
-					<integer>2</integer>
-					<key>EdgeHScrollArea</key>
-					<integer>10</integer>
-					<key>EdgeScrollAccelMode</key>
-					<integer>0</integer>
-					<key>EdgeScrolling</key>
-					<true/>
-					<key>EdgeVScrollAdaptArea</key>
-					<integer>3</integer>
-					<key>EdgeVScrollArea</key>
-					<integer>7</integer>
-					<key>Inertial2FingScroll</key>
-					<true/>
-					<key>InertialEdgeScroll</key>
-					<true/>
+					<key>2FScroll</key>
+					<dict>
+						<key>2FScrollAccelMode</key>
+						<integer>0</integer>
+						<key>Auto2FingScroll</key>
+						<false/>
+						<key>Continuous2FingScroll</key>
+						<true/>
+						<key>Inertial2FingScroll</key>
+						<true/>
+						<key>Sling2FingScroll</key>
+						<false/>
+					</dict>
+					<key>EdgeScroll</key>
+					<dict>
+						<key>AutoEdgeScroll</key>
+						<false/>
+						<key>ContinuousEdgeScroll</key>
+						<false/>
+						<key>EdgeCircularScroll</key>
+						<false/>
+						<key>EdgeCircularScrollDelta</key>
+						<integer>10</integer>
+						<key>EdgeHScrollAdaptArea</key>
+						<integer>2</integer>
+						<key>EdgeHScrollArea</key>
+						<integer>10</integer>
+						<key>EdgeScrollAccelMode</key>
+						<integer>0</integer>
+						<key>EdgeScrolling</key>
+						<true/>
+						<key>EdgeVScrollAdaptArea</key>
+						<integer>3</integer>
+						<key>EdgeVScrollArea</key>
+						<integer>7</integer>
+						<key>InertialEdgeScroll</key>
+						<true/>
+						<key>SlingEdgeScroll</key>
+						<false/>
+					</dict>
 					<key>InertialScrollLevel</key>
 					<integer>2</integer>
 					<key>NoInertiaForHScroll</key>
@@ -1035,10 +1075,6 @@
 					<integer>3</integer>
 					<key>ScrollStopDetectSamples</key>
 					<integer>3</integer>
-					<key>Sling2FingScroll</key>
-					<false/>
-					<key>SlingEdgeScroll</key>
-					<false/>
 					<key>SlingScrollStartTimeOut</key>
 					<integer>800</integer>
 					<key>SlingTriggerArea</key>
@@ -1133,6 +1169,10 @@
 						<key>SynapticsClickPad</key>
 						<integer>40</integer>
 					</dict>
+					<key>2FingersTapAction</key>
+					<integer>22</integer>
+					<key>3FingersTapAction</key>
+					<integer>21</integer>
 					<key>4FingersTapAction</key>
 					<integer>4</integer>
 					<key>5FingersTapAction</key>
@@ -1176,9 +1216,9 @@
 		<key>com.apple.kpi.mach</key>
 		<string>9.0.0</string>
 		<key>org.emlydinesh.driver.ApplePS2Controller</key>
-		<string>4.4.5</string>
+		<string>4.5</string>
 		<key>org.emlydinesh.driver.ApplePS2Keyboard</key>
-		<string>4.4.5</string>
+		<string>4.5</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Safe Boot</string>
