@@ -924,7 +924,7 @@
 					<key>EnableAsusKBacklightAutoOff</key>
 					<false/>
 					<key>EnableAsusKBacklightSupport</key>
-					<true/>
+					<false/>
 					<key>TapEnablesTPadFromAccInput</key>
 					<false/>
 					<key>TimeOutEnablesTPadAfterAccInput</key>
