@@ -8,6 +8,8 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>FIX_ACST_4000000</key>
+				<true/>
 				<key>FixRegions_10000000</key>
 				<true/>
 				<key>NewWay_80000000</key>
@@ -33,12 +35,12 @@
 	<dict>
 		<key>Arguments</key>
 		<string>kext-dev-mode=1 darkwake=0 rootless=0 dart=0 -gux_defer_usb2 nv_disable=1</string>
-		<key>Debug</key>
-		<false/>
 		<key>DefaultVolume</key>
 		<string>OSX</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
+		<key>Debug</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -95,7 +97,7 @@
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
-			<true/>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
