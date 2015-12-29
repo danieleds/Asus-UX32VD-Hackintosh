@@ -13,6 +13,7 @@ Apply the patches **in the following order**:
  - ./RehabMan/system_OSYS_win7.txt
  - ./RehabMan/graphics_HD4K_low.txt (WARNING: set "AAPL,ig-platform-id",Buffer (0x04) {0x09, 0x00, 0x66, 0x01}
  - ./RehabMan/audio_HDEF-layout3.txt
+ - ./RehabMan/usb_USB_6-series.txt
  - ./EMlyDinEsH/ALS Patch.txt
  - ./EMlyDinEsH/Fn Brightness Keys Patch.txt
  - ./EMlyDinEsH/FnKeys as Function Keys Patch.txt

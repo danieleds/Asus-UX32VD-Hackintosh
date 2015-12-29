@@ -23,6 +23,7 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - FN keys
    - HDMI video
    - ALS sensor (toggle with Fn+A, logs in /var/log/system.log)
+   - Webcam
    - A lot more...
  - Not working: 
    - Card reader
