@@ -13,7 +13,7 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
  - Bluetooth: missing. If you need it, use AzureWave AW-CE123H as WiFi card (chipset: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)).
 
 ####Status
- - Current OS X version: El Capitan 10.11.2
+ - Current OS X version: El Capitan 10.11.3
  - Working:
    - CPU steps
    - Sleep
