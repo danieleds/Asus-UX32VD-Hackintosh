@@ -146,7 +146,7 @@
 			<key>IOProviderClass</key>
 			<string>ApplePS2KeyboardDevice</string>
 			<key>Keyboard type (ID)</key>
-			<integer>0</integer>
+			<integer>49</integer>
 			<key>Preferences</key>
 			<dict>
 				<key>Disable Num Lock LED</key>
@@ -154,9 +154,9 @@
 				<key>Enable Extended Functions</key>
 				<true/>
 				<key>FinerFnBrightnessControl</key>
-				<true/>
+				<false/>
 				<key>FinerFnVolumeControl</key>
-				<true/>
+				<false/>
 				<key>Make Caps Lock into key</key>
 				<integer>0</integer>
 				<key>Make ISO keypad key . to ,</key>
@@ -172,16 +172,16 @@
 				<key>Make right control into key</key>
 				<integer>0</integer>
 				<key>Make shift + caps into Fn key</key>
-				<true/>
+				<false/>
 				<key>Num Lock enabled at boot</key>
 				<false/>
 				<key>Swap alt and windows key</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>ProductID</key>
 			<integer>782</integer>
 			<key>Use ISO Layout</key>
-			<false/>
+			<true/>
 			<key>VendorID</key>
 			<integer>1452</integer>
 		</dict>
