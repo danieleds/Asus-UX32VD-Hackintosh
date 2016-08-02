@@ -1,3 +1,6 @@
+# cat /proc/asound/card0/codec#0
+# also try `#1`, `#2` and `#3`
+
 Codec: Realtek ALC269VB
 Address: 0
 AFG Function Id: 0x1 (unsol 1)
