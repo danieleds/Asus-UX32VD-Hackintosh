@@ -140,6 +140,20 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>HDMI Audio Port 0205 01660009</string>
+				<key>Find</key>
+				<data>
+				AwQAAAAEAAAHAQAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferCapri</string>
+				<key>Replace</key>
+				<data>
+				AwQAAAAIAAAHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Find</key>
 				<data>
