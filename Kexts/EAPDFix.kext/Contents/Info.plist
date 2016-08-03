@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1</string>
+	<string>2.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.1</string>
+	<string>2.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -42,10 +42,14 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.EAPDFix</string>
-			<key>CodecValues</key>
+			<key>IOClass</key>
+			<string>EAPDFix</string>
+			<key>IOProviderClass</key>
+			<string>IOResources</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
+			<key>LaptopCodecValues</key>
 			<dict>
-				<key>CodecAddress</key>
-				<integer>0</integer>
 				<key>ExternalMic</key>
 				<integer>24</integer>
 				<key>Headphones</key>
@@ -53,30 +57,41 @@
 				<key>HpHasEAPD</key>
 				<false/>
 				<key>InternalMic</key>
-				<integer>25</integer>
+				<integer>18</integer>
 				<key>Speakers</key>
 				<integer>20</integer>
 				<key>SpkHasEAPD</key>
 				<true/>
 			</dict>
-			<key>IOClass</key>
-			<string>EAPDFix</string>
-			<key>IOProviderClass</key>
-			<string>IOResources</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 			<key>Preferences</key>
 			<dict>
+				<key>BootFixDelay</key>
+				<integer>1000</integer>
+				<key>CodecAddress</key>
+				<integer>0</integer>
 				<key>FixType</key>
 				<integer>1</integer>
 				<key>HDEFAddress</key>
-				<string>1B</string>
+				<array>
+					<string>1B</string>
+					<string>1F,3</string>
+					<string>8</string>
+				</array>
 				<key>JackSenseFix</key>
 				<false/>
-				<key>SendDelay</key>
-				<integer>1000</integer>
+				<key>ResetCodec</key>
+				<dict>
+					<key>AfterInterruptedSleep</key>
+					<true/>
+					<key>AfterSystemSleep</key>
+					<true/>
+					<key>AtSystemBoot</key>
+					<false/>
+				</dict>
 				<key>SkipBootBgCheck</key>
-				<true/>
+				<false/>
+				<key>SleepFixDelay</key>
+				<integer>1500</integer>
 				<key>StatusCheckInterval</key>
 				<integer>1500</integer>
 				<key>VerbSendCount</key>
@@ -96,19 +111,19 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © EMlyDinEsH (mg-dinesh@live.com) 2013-2015. All rights reserved.</string>
+	<string>Copyright © EMlyDinEsH (mg-dinesh@live.com) 2013-2016. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.iokit.IOAudioFamily</key>
-		<string>1.1fc9</string>
 		<key>com.apple.iokit.IOHIDSystem</key>
 		<string>1.6.5</string>
 		<key>com.apple.kpi.bsd</key>
-		<string>10.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>9.6.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>9.6.0</string>
+		<string>8.0.0</string>
 	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
 </dict>
 </plist>
