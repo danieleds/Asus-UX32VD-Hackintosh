@@ -21,7 +21,7 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - WiFi
    - Multitouch
    - FN keys
-   - HDMI video
+   - HDMI audio/video
    - ALS sensor (toggle with Fn+A, logs in /var/log/system.log)
    - Webcam
    - A lot more...
@@ -29,7 +29,6 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - Card reader
    - Bluetooth (it works using an appropriate Wifi card like AzureWave AW-CE123H)
  - Unknown (not tested properly):
-   - HDMI audio
    - iMessage
    - Handoff
    - Instant Hotspot
