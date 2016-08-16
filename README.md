@@ -1,6 +1,7 @@
 # OS X on Asus UX32VD
 This is a working set of kexts and configurations for running OS X on an ASUS UX32VD laptop.
-Note: the original wireless card doesn't work with OS X. I've replaced it.
+
+The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X since a long time, so I don't remember the problems I faced during installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good all-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum. Anyway, I have included some of the kexts I used for the installation at [Kexts for installation/](Kexts for installation/).
 
 ####System
 You can find detailed hardware information gathered from Ubuntu at [System Hardware/](System Hardware/).
@@ -10,7 +11,7 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
  - GPU: Intel HD4000 + Nvidia GeForce GT 620M
  - Audio: ALC269VB
  - Wifi: Dell Wireless 1520 (chipset: Broadcom BCM4322 (BCM94322HM8L))
- - Bluetooth: missing. If you need it, use AzureWave AW-CE123H as WiFi card (chipset: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)).
+   - _The stock wireless card doesn't work with OS X. I have replaced it with this one. Because of this, bluetooth is missing. If you need it, use AzureWave AW-CE123H as WiFi card instead (chipset: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3))._
 
 ####Status
  - Current OS X version: El Capitan 10.11.6
@@ -21,7 +22,7 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - WiFi
    - Multitouch
    - FN keys
-   - HDMI video
+   - HDMI audio/video
    - ALS sensor (toggle with Fn+A, logs in /var/log/system.log)
    - Webcam
    - A lot more...
@@ -29,7 +30,6 @@ You can find detailed hardware information gathered from Ubuntu at [System Hardw
    - Card reader
    - Bluetooth (it works using an appropriate Wifi card like AzureWave AW-CE123H)
  - Unknown (not tested properly):
-   - HDMI audio
    - iMessage
    - Handoff
    - Instant Hotspot
