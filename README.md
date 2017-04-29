@@ -1,12 +1,12 @@
 # OS X on Asus UX32VD
 This is a working set of kexts and configurations for running OS X on an ASUS UX32VD laptop.
 
-The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X since a long time, so I don't remember the problems I faced during installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good all-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum. Anyway, I have included some of the kexts I used for the installation at [Kexts for installation/](Kexts for installation/).
+The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X since a long time, so I don't remember the problems I faced during installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good all-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum. Anyway, I have included some of the kexts I used for the installation at [Kexts for installation/](Kexts%20for%20installation/).
 
 **WARNING: I'm not using the Zenbook anymore, so this is potentially outdated. However, it's probably still good as a starting point.**
 
 #### System
-You can find detailed hardware information gathered from Ubuntu at [System Hardware/](System Hardware/).
+You can find detailed hardware information gathered from Ubuntu at [System Hardware/](System%20Hardware/).
 
  - UEFI firmware version: 214
  - CPU: Intel Core i5-3317U
